@@ -33,5 +33,7 @@ somewhere around line 9 in recorder.py you can change it to something else.
 
 options are: high, low, medium, mobile, source, worst
 
+for some reason it freaks out and misses the first minute or so of streams. not sure why. i blame twitches broken api for not updating quickly.
+
 
 if you have questions throw it in the issues tab please.

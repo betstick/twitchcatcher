@@ -1,0 +1,21 @@
+#config file
+
+#you'll need to get these from twitch by registering an application with them
+#DO NOT SHARE EITHER WITH ANYONE FOR ANY REASON EVER!!!!!
+[client_info]
+client_id = 
+client_secret = 
+
+#add in comma separated list, no spaces
+[users]
+userlist = 
+
+#output is where the streams should end up, end folders withe a /
+#eg: /home/videos/output/
+[paths]
+output = 
+
+[params]
+#in seconds, how long to wait before rechecking. don't do under ten.
+#twitch may get upset if you spam api requests too often. 10 is a good default.
+delay = 10

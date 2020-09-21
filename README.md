@@ -35,5 +35,6 @@ options are: high, low, medium, mobile, source, worst
 
 for some reason it freaks out and misses the first minute or so of streams. not sure why. i blame twitches broken api for not updating quickly.
 
+also, if you don't want ads in your streams, install the nightly version of streamlink: pip3 install git+https://github.com/streamlink/streamlink
 
 if you have questions throw it in the issues tab please.

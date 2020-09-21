@@ -6,6 +6,8 @@ written in python.
 
 requirements:
 
+a twitch dev account with an api key. use google to figure out how to get one.
+
 streamlink python library
 
 python 3.5+

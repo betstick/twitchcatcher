@@ -1,12 +1,14 @@
 #config file
 
 #you'll need to get these from twitch by registering an application with them
+#google it i forget how i did this.
 #DO NOT SHARE EITHER WITH ANYONE FOR ANY REASON EVER!!!!!
 [client_info]
 client_id = 
 client_secret = 
 
 #add in comma separated list, no spaces
+#eg: name1,name2,name3
 [users]
 userlist = 
 

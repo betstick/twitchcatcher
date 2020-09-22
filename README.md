@@ -27,7 +27,7 @@ run main.py in a terminal
 
 notes:
 
-streams can become "malformed" due to ads and the twitch api being bad. can cause buggy and difficult to navigate timelines in the videos. re-encode the videos to fix it? not sure. haven't checked. re-encoding 6 hour videos takes 6+ hours on my systems.
+streams can become "malformed" due to ads and the twitch api being bad. can cause buggy and difficult to navigate timelines in the videos. re-encode the videos to fix it? not sure. haven't checked. re-encoding 6 hour videos takes 6+ hours on my systems. the people behind streamlink have explained in depth that its twitch messing up encoding or something to that effect. blocking ads is the solution for us, twitch fixing their platform should be the solution but they probably don't care.
 
 the default stream quality is 'source' and it takes up a ton of space.
 

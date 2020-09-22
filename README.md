@@ -39,4 +39,6 @@ for some reason it freaks out and misses the first minute or so of streams. not 
 
 also, if you don't want ads in your streams, install the nightly version of streamlink: pip3 install git+https://github.com/streamlink/streamlink
 
+if you see lots of errors in the logs when streamers go offline, that's normal. its twitch's api (again) not updating quickly and so my code tries to keep reading from a nonexistant stream. better to try recording the stream and fail then to not try and potentially miss a stream or break up files due to an error.
+
 if you have questions throw it in the issues tab please.

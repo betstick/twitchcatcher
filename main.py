@@ -33,7 +33,11 @@ def list_check(userlist,client_id,acesss_token):
 
 	for username in userlist:
 		userurl = 'https://api.twitch.tv/helix/streams?user_login='+username
-		get = requests.get(userurl, headers={"Authorization": "Bearer "+acesss_token,"Client-ID": client_id})
+		try:
+			get = requests.get(userurl, headers={"Authorization": "Bearer "+acesss_token,"Client-ID": client_id})
+		except:
+			access_token = get_token(client_id,client_secret)
+			get = requests.get(userurl, headers={"Authorization": "Bearer "+acesss_token,"Client-ID": client_id})
 
 		#check theres a dict before we try to eval it to prevent error
 		if(len((get.json())["data"]) > 0):
@@ -64,7 +68,7 @@ while(1==1):
 			succ = 1
 		except Exception as e:
 			print("Online check failed, retrying...")
-			print("error was: " + e)
+			print("error was: " + str(e))
 			#hacked this in to see if it fixes "the problem"
 			access_token = get_token(client_id,client_secret)
 			online_list = list_check(userlist,client_id,access_token)
@@ -85,4 +89,4 @@ while(1==1):
 	#sleep 10 seconds to prevent spamming twitch api
 	#and to not waste cpu cycles, also clock in time
 	time.sleep(10)
-	expires = expires + 10
+	expires = expires + 12 #cause it takes like two seconds to get thru the list
